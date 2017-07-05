@@ -1,0 +1,21 @@
+# js-demo
+有趣并且实用的demo
+
+
+<div>
+		<ul>
+			<li><a href="images/小白.jpeg" onclick="showpic(this);return false;">小白</li>
+			<li><a href="images/小黄.jpg" onclick="showpics(this);return false;">小黄</li>
+			<li><a href="images/小黑.jpeg" onclick="showpics(this);return false;">小黑</li>
+			<li><a href="images/小长.jpg" onclick="showpics(this);return false;">小长</li>
+		</ul>
+		<img id="myimages"  height="400" width="400" alt="小朴的图片">
+	</div>
+  
+  <script>
+  function showpic(whichpic){
+  var img=document.getElementById("myimages");
+  var source=whichpic.getAttribute("href");
+  img.setAttribute("src",source);
+  }
+  </script>
